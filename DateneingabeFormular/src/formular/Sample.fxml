@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="419.0" prefWidth="477.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="formular.SampleController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="button1" layoutX="23.0" layoutY="352.0" mnemonicParsing="false" text="Abbruch" />
+    <Button fx:id="button3" layoutX="234.0" layoutY="352.0" mnemonicParsing="false" text="Aller Felder löschen" />
+    <Button fx:id="button2" layoutX="121.0" layoutY="352.0" mnemonicParsing="false" text="Übernahme" />
+    <Label fx:id="label1" layoutX="23.0" layoutY="87.0" text="Title">
+      <font>
+        <Font name="System Bold" size="16.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="label2" font="$x1" layoutX="23.0" layoutY="128.0" text="Vorname" />
+    <Label fx:id="label3" font="$x1" layoutX="23.0" layoutY="166.0" text="Nachname" />
+    <Label fx:id="label4" font="$x1" layoutX="23.0" layoutY="200.0" text="Strasse Hausnr" />
+    <Label fx:id="label5" font="$x1" layoutX="23.0" layoutY="232.0" text="PLZ" />
+    <Label fx:id="label6" font="$x1" layoutX="23.0" layoutY="268.0" text="Ort" />
+    <ComboBox fx:id="combobox" layoutX="166.0" layoutY="87.0" prefHeight="23.0" prefWidth="200.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Herr" />
+          <String fx:value="Frau" />
+          <String fx:value="Prof." />
+          <String fx:value="Dr." />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <TextField fx:id="textfield1" layoutX="166.0" layoutY="126.0" prefWidth="200.0" />
+    <TextField fx:id="textfield2" layoutX="166.0" layoutY="159.0" prefWidth="200.0" />
+    <TextField fx:id="textfield3" layoutX="166.0" layoutY="193.0" prefWidth="200.0" />
+    <TextField fx:id="textfield4" layoutX="166.0" layoutY="225.0" prefWidth="200.0" />
+    <TextField fx:id="textfield5" layoutX="166.0" layoutY="261.0" prefWidth="200.0" />
+  </children>
+</AnchorPane>
